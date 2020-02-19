@@ -50,7 +50,7 @@ public class Atualizador extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel2.setBackground(new java.awt.Color(102, 0, 102));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -95,7 +95,7 @@ public class Atualizador extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel2.setText("Versão 0.3.5");
+        jLabel2.setText("Versão 0.4.5");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 102, 102));
@@ -135,7 +135,7 @@ public class Atualizador extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel3))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -146,7 +146,7 @@ public class Atualizador extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -161,14 +161,14 @@ public class Atualizador extends javax.swing.JFrame {
     private void atualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atualizarActionPerformed
         String uri = "att\\DesktopONG.jar";
         String uriAtt = "c:\\Bits Jr\\Gerência Amazônia\\DesktopONG.jar";
-        String uri2 = "att\\ass.txt";
-        String uriAtt2 = "C:\\Bits Jr\\Gerência Amazônia\\banco_de_dados\\ass.txt";
+        //String uri2 = "att\\ass.txt";
+        //String uriAtt2 = "C:\\Bits Jr\\Gerência Amazônia\\banco_de_dados\\ass.txt";
         
         File arq = new File(uri);
         File arqDelete = new File(uriAtt);
-        File arq2 = new File(uri2);
+        //File arq2 = new File(uri2);
         
-            arq2.renameTo(new File(uriAtt2));
+            //arq2.renameTo(new File(uriAtt2));
         
         
         if(arqDelete.delete()){
