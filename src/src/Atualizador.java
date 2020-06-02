@@ -161,14 +161,9 @@ public class Atualizador extends javax.swing.JFrame {
     private void atualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atualizarActionPerformed
         String uri = "att\\DesktopONG.jar";
         String uriAtt = "c:\\Bits Jr\\Gerência Amazônia\\DesktopONG.jar";
-        //String uri2 = "att\\ass.txt";
-        //String uriAtt2 = "C:\\Bits Jr\\Gerência Amazônia\\banco_de_dados\\ass.txt";
         
         File arq = new File(uri);
         File arqDelete = new File(uriAtt);
-        //File arq2 = new File(uri2);
-        
-            //arq2.renameTo(new File(uriAtt2));
         
         
         if(arqDelete.delete()){
